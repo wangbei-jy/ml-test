@@ -16,8 +16,9 @@ from xgboost import XGBRegressor, XGBClassifier
 from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
 
 # 解决中文显示问题
-plt.rcParams['font.sans-serif'] = ['SimHei']
-plt.rcParams['axes.unicode_minus'] = False
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 设置中文字体为黑体
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号'-'显示为方块的问题
+plt.rcParams['font.size'] = 18  # 设置全局字体大小
 
 # 定义机器学习模型字典及其超参数设置
 models = {
