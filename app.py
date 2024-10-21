@@ -17,9 +17,9 @@ from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
 
 # 解决中文显示问题
 # 设置字体为默认 sans-serif
-matplotlib.rcParams['font.family'] = 'sans-serif'
-matplotlib.rcParams['font.sans-serif'] = ['Arial']  # 或者其他可用的 sans-serif 字体
 
+plt.rcParams['font.sans-serif'] = ['Arial']
+plt.rcParams['axes.unicode_minus'] = False
 # 定义机器学习模型字典及其超参数设置
 models = {
     "线性回归": (LinearRegression(), {"fit_intercept": [True, False]}),
