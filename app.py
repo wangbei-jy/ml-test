@@ -18,7 +18,7 @@ from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
 # 解决中文显示问题
 # 设置字体为默认 sans-serif
 
-plt.rcParams['font.sans-serif'] = ['Arial']
+plt.rcParams['font.sans-serif'] = ['Noto Sans CJK']
 plt.rcParams['axes.unicode_minus'] = False
 # 定义机器学习模型字典及其超参数设置
 models = {
